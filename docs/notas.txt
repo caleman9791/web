@@ -1,1 +1,237 @@
-ok
+
+<html>
+<head>
+    <!-- Tu código del encabezado aquí -->
+</head>
+<body>
+    <header>
+        <!-- Tu encabezado aquí -->
+    </header>
+
+    <nav>
+        <a href="#" id="homeLink">Inicio</a>
+        <a href="#" id="aboutLink">Acerca de</a>
+        <a href="#" id="contactLink">Contacto</a>
+    </nav>
+
+    <main id="content">
+        <!-- Contenedor para cargar contenido dinámicamente -->
+    </main>
+
+    <footer>
+        <!-- Tu pie de página aquí -->
+    </footer>
+
+    <!-- Tu código de scripts JavaScript aquí -->
+</body>
+</html>
+
+// Funciones para cargar contenido en base a las URLs simuladas
+function loadHome() {
+    document.getElementById('content').innerHTML = '<h1>Bienvenido a la página de inicio</h1>';
+}
+
+function loadAbout() {
+    document.getElementById('content').innerHTML = '<h1>Acerca de nosotros</h1><p>Esta es la página de acerca de nosotros</p>';
+}
+
+function loadContact() {
+    document.getElementById('content').innerHTML = '<h1>Contacto</h1><p>Información de contacto</p>';
+}
+
+// Asociar funciones a los enlaces correspondientes
+document.getElementById('homeLink').addEventListener('click', loadHome);
+document.getElementById('aboutLink').addEventListener('click', loadAbout);
+document.getElementById('contactLink').addEventListener('click', loadContact);
+
+==============================================================================================================
+
+
+Para modificar la URL visible en la barra de direcciones del navegador sin recargar la página, puedes utilizar la API del historial (history.pushState() y history.replaceState()) en conjunto con la manipulación del evento popstate. Aquí tienes un ejemplo básico:
+<!DOCTYPE html>
+<html>
+<head>
+    <!-- Tu código del encabezado aquí -->
+</head>
+<body>
+    <header>
+        <!-- Tu encabezado aquí -->
+    </header>
+
+    <nav>
+        <a href="/home" id="homeLink">Inicio</a>
+        <a href="/about" id="aboutLink">Acerca de</a>
+        <a href="/contact" id="contactLink">Contacto</a>
+    </nav>
+
+    <main id="content">
+        <!-- Contenedor para cargar contenido dinámicamente -->
+    </main>
+
+    <footer>
+        <!-- Tu pie de página aquí -->
+    </footer>
+
+    <!-- Tu código de scripts JavaScript aquí -->
+    <script>
+        // Funciones para cargar contenido en base a las URLs simuladas
+        function loadContent(url) {
+            // Aquí cargas el contenido correspondiente a la URL
+            // Puedes usar AJAX, fetch, u otros métodos para obtener el contenido
+        }
+
+        // Función para manipular el evento 'popstate'
+        function handlePopState(event) {
+            // Obtener la URL actual
+            var url = location.pathname;
+
+            // Cargar el contenido correspondiente a la URL
+            loadContent(url);
+        }
+
+        // Asociar funciones a los enlaces correspondientes
+        document.getElementById('homeLink').addEventListener('click', function(event) {
+            event.preventDefault();
+            var url = '/home';
+            // Modificar la URL visible en la barra de direcciones sin recargar la página
+            history.pushState(null, null, url);
+            // Cargar el contenido correspondiente a la URL
+            loadContent(url);
+        });
+
+        document.getElementById('aboutLink').addEventListener('click', function(event) {
+            event.preventDefault();
+            var url = '/about';
+            history.pushState(null, null, url);
+            loadContent(url);
+        });
+
+        document.getElementById('contactLink').addEventListener('click', function(event) {
+            event.preventDefault();
+            var url = '/contact';
+            history.pushState(null, null, url);
+            loadContent(url);
+        });
+
+        // Manipular el evento 'popstate' para cargar el contenido correspondiente a la URL al retroceder o avanzar en el historial
+        window.addEventListener('popstate', handlePopState);
+    </script>
+</body>
+</html>
+
+
+
+==============================================================
+
+
+
+<!DOCTYPE html>
+<html>
+<head>
+    <!-- Tu código del encabezado aquí -->
+</head>
+<body>
+    <header>
+        <!-- Tu encabezado aquí -->
+    </header>
+
+    <nav>
+        <!-- Tu menú de navegación aquí -->
+    </nav>
+
+    <main id="content">
+        <!-- Contenedor para cargar contenido dinámicamente -->
+    </main>
+
+    <footer>
+        <!-- Tu pie de página aquí -->
+    </footer>
+
+    <!-- Tu código de scripts JavaScript aquí -->
+</body>
+</html>
+
+function loadContent(url) {
+    fetch(url)
+        .then(response => response.text())
+        .then(data => {
+            document.getElementById('content').innerHTML = data;
+        })
+        .catch(error => {
+            console.error('Error al cargar el contenido:', error);
+        });
+}
+
+loadContent('about.html');
+
+
+// Crear una cookie
+document.cookie = "nombre=John Doe";
+
+// Leer el valor de una cookie
+var nombre = document.cookie;
+
+// Eliminar una cookie (estableciendo su fecha de caducidad en el pasado)
+document.cookie = "nombre=; expires=Thu, 01 Jan 1970 00:00:00 UTC";
+
+
+
+
+
+// Guardar datos en LocalStorage
+localStorage.setItem("nombre", "John Doe");
+
+// Obtener datos de LocalStorage
+var nombre = localStorage.getItem("nombre");
+
+// Eliminar datos de LocalStorage
+localStorage.removeItem("nombre");
+
+
+
+
+// Guardar datos en SessionStorage
+sessionStorage.setItem("nombre", "John Doe");
+
+// Obtener datos de SessionStorage
+var nombre = sessionStorage.getItem("nombre");
+
+// Eliminar datos de SessionStorage
+sessionStorage.removeItem("nombre");
+
+
+
+
+// Abrir o crear una base de datos
+var request = indexedDB.open("miBaseDeDatos", 1);
+
+// Configurar eventos de éxito o error al abrir la base de datos
+request.onsuccess = function(event) {
+    var db = event.target.result;
+    // Trabajar con la base de datos
+};
+
+request.onerror = function(event) {
+    console.error("Error al abrir la base de datos", event.target.error);
+};
+
+// Crear almacén de objetos dentro de la base de datos
+request.onupgradeneeded = function(event) {
+    var db = event.target.result;
+    var objectStore = db.createObjectStore("usuarios", { keyPath: "id" });
+    // Configurar índices u otras opciones del almacén
+};
+
+// Trabajar con la base de datos (ejemplo de escritura)
+var transaction = db.transaction("usuarios", "readwrite");
+var objectStore = transaction.objectStore("usuarios");
+var usuario = { id: 1, nombre: "John Doe", edad: 30 };
+var request = objectStore.add(usuario);
+
+request.onsuccess = function(event) {
+    console.log("Usuario agregado correctamente");
+};
+
+request.onerror = function(event) {
+    console.error("Error al agregar usuario", event.target.error);
+};
