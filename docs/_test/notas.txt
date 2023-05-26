@@ -1,0 +1,107 @@
+https://devdocs.io/dom/indexeddb_api
+https://devdocs.io/dom-indexeddb/
+
+IDBCursor
+IDBCursor.advance
+IDBCursor.continue
+IDBCursor.continuePrimaryKey
+IDBCursor.delete
+IDBCursor.direction
+IDBCursor.key
+IDBCursor.primaryKey
+IDBCursor.request
+IDBCursor.source
+IDBCursor.update
+IDBCursorWithValue
+IDBCursorWithValue.value
+IDBDatabase
+IDBDatabase.close
+IDBDatabase.close event
+IDBDatabase.createObjectStore
+IDBDatabase.deleteObjectStore
+IDBDatabase.name
+IDBDatabase.objectStoreNames
+IDBDatabase.transaction
+IDBDatabase.version
+IDBDatabase.versionchange event
+IDBFactory
+IDBFactory.cmp
+IDBFactory.databases
+IDBFactory.deleteDatabase
+IDBFactory.open
+IDBIndex
+IDBIndex.count
+IDBIndex.get
+IDBIndex.getAll
+IDBIndex.getAllKeys
+IDBIndex.getKey
+IDBIndex.isAutoLocale
+IDBIndex.keyPath
+IDBIndex.locale
+IDBIndex.multiEntry
+IDBIndex.name
+IDBIndex.objectStore
+IDBIndex.openCursor
+IDBIndex.openKeyCursor
+IDBIndex.unique
+IDBKeyRange
+IDBKeyRange.bound
+IDBKeyRange.includes
+IDBKeyRange.lower
+IDBKeyRange.lowerBound
+IDBKeyRange.lowerOpen
+IDBKeyRange.only
+IDBKeyRange.upper
+IDBKeyRange.upperBound
+IDBKeyRange.upperOpen
+IDBLocaleAwareKeyRange
+IDBObjectStore
+IDBObjectStore.add
+IDBObjectStore.autoIncrement
+IDBObjectStore.clear
+IDBObjectStore.count
+IDBObjectStore.createIndex
+IDBObjectStore.delete
+IDBObjectStore.deleteIndex
+IDBObjectStore.get
+IDBObjectStore.getAll
+IDBObjectStore.getAllKeys
+IDBObjectStore.getKey
+IDBObjectStore.index
+IDBObjectStore.indexNames
+IDBObjectStore.keyPath
+IDBObjectStore.name
+IDBObjectStore.openCursor
+IDBObjectStore.openKeyCursor
+IDBObjectStore.put
+IDBObjectStore.transaction
+IDBOpenDBRequest
+IDBOpenDBRequest.blocked event
+IDBOpenDBRequest.upgradeneeded event
+IDBRequest
+IDBRequest.error
+IDBRequest.error event
+IDBRequest.readyState
+IDBRequest.result
+IDBRequest.source
+IDBRequest.success event
+IDBRequest.transaction
+IDBTransaction
+IDBTransaction.abort
+IDBTransaction.abort event
+IDBTransaction.commit
+IDBTransaction.complete event
+IDBTransaction.db
+IDBTransaction.durability
+IDBTransaction.error
+IDBTransaction.error event
+IDBTransaction.mode
+IDBTransaction.objectStore
+IDBTransaction.ObjectStoreNames
+IDBVersionChangeEvent
+IDBVersionChangeEvent.constructor
+IDBVersionChangeEvent.newVersion
+IDBVersionChangeEvent.oldVersion
+IndexedDB API
+IndexedDB API: Basic Terminology
+IndexedDB API: Using IndexedDB
