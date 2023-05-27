@@ -18,3 +18,15 @@ h6 {
 	height: 300px !important;
 }
  */
+
+/* ..w3-container h1 {
+	font-size: 40px;
+}
+
+..w3-container h2 {
+	font-size: 30px;
+} */
+
+.w3-container p {
+	font-size: 19px !important;
+}
