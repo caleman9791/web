@@ -38,3 +38,13 @@ h6 {
 #sidebar a {
 	color: white !important;
 }
+
+.img_perfil {
+	border-width: 3px !important;
+	border-style: solid !important;
+	border-color: #744AAB !important;
+}
+
+.navbar .navbar-brand-wrapper {
+	/* 	background-color: #744AAB !important; */
+}
