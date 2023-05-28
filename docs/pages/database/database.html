@@ -546,29 +546,105 @@
 				</nav>
 				<!-- partial -->
 				<div class="main-panel">
-					<div class="content-wrapper"></div>
-					<!-- content-wrapper ends -->
-					<!-- partial:../../partials/_footer.html -->
-					<!-- 		<footer class="footer">
-								<div class="footer-inner-wraper">
-									<div class="d-sm-flex justify-content-center justify-content-sm-between py-2">
-										<span class="text-muted text-center text-sm-left d-block d-sm-inline-block">
-											Copyright ©
-											<a href="https://www.bootstrapdash.com/" target="_blank">
-												bootstrapdash.com
-											</a>
-											2021
+					<div class="content-wrapper">
+						<div class="w3-container">
+							<div class="w3-responsive">
+								<table id="tablaDB" class="w3-table-all">
+									<thead>
+										<tr>
+											<th>
+												Nombre
+											</th>
+											<th>
+												version
+											</th>
+											<th style="width:10%"></th>
+										</tr>
+									</thead>
+									<tbody id="tbody"></tbody>
+								</table>
+							</div>
+							<div id="modal_crear_db" class="w3-modal">
+								<br/>
+								<br/>
+								<div class="w3-modal-content w3-animate-top">
+									<div class="w3-container w3-padding-64">
+										<span onclick="document.getElementById('modal_crear_db').style.display='none'"  class="w3-button w3-display-topright">
+											&times;
 										</span>
-										<span class="float-none float-sm-right d-block mt-1 mt-sm-0 text-center">
-											Only the best
-											<a href="https://www.bootstrapdash.com/" target="_blank">
-												Bootstrap dashboard
-											</a>
-											templates
+										<h3>
+											Agrega un nombre y un versión  a tu base de datos
+										</h3>
+										<div class="w3-row-padding">
+											<div class="w3-half w3-padding">
+												<input id="txt_dbnombre" class="w3-input w3-border" style="width:90%" type="text" placeholder="Nombre de la base de datos "/>
+											</div>
+											<div class="w3-half w3-padding">
+												<input id="txt_dbversion" class="w3-input w3-border" style="width:90%" type="number" placeholder="Versión de la base de datos"/>
+											</div>
+										</div>
+										<div class="w3-panel">
+											<div class="w3-container">
+												<input id="crear" class="w3-btn w3-block w3-green w3-round-xxlarge" type="button" value="Crear"/>
+											</div>
+										</div>
+										<!-- / -->
+									</div>
+									<!-- 	<footer class="w3-container w3-teal">
+											<p>
+												Modal Footer
+											</p>
+										</footer> -->
+								</div>
+							</div>
+							<div id="modal_eliminar" class="w3-modal">
+								<br/>
+								<br/>
+								<div class="w3-modal-content w3-animate-top">
+									<div class="w3-container w3-padding-64">
+										<span onclick="document.getElementById('modal_eliminar').style.display='none'"  class="w3-button w3-display-topright">
+											&times;
 										</span>
+										<div class="w3-center">
+											<p>
+												<i class="mdi mdi-sync-alert w3-text-red w3-jumbo"></i>
+											</p>
+											<p>
+												El boton de eliminar no esta trabajado
+											</p>
+										</div>
+										<!-- / -->
 									</div>
 								</div>
-							</footer> -->
+							</div>
+						</div>
+					</div>
+					<div class="w3-bottom w3-justify">
+						<!-- <div class="w3-bottom w3-hide-large w3-hide-medium"> -->
+						<input id="btn_crear_db" class="w3-btn w3-blue w3-block"  type="button" value="Crear una nueva base de datos"/>
+					</div>
+					<!-- content-wrapper ends -->
+					<!-- partial:../../partials/_footer.html -->
+					<!-- 				<footer class="footer">
+										<div class="footer-inner-wraper">
+											<div class="d-sm-flex justify-content-center justify-content-sm-between py-2">
+												<span class="text-muted text-center text-sm-left d-block d-sm-inline-block">
+													Copyright ©
+													<a href="https://www.bootstrapdash.com/" target="_blank">
+														bootstrapdash.com
+													</a>
+													2021
+												</span>
+												<span class="float-none float-sm-right d-block mt-1 mt-sm-0 text-center">
+													Only the best
+													<a href="https://www.bootstrapdash.com/" target="_blank">
+														Bootstrap dashboard
+													</a>
+													templates
+												</span>
+											</div>
+										</div>
+									</footer> -->
 					<!-- partial -->
 				</div>
 				<!-- main-panel ends -->
@@ -585,6 +661,7 @@
 		<script src="../../assets/js/off-canvas.js"></script>
 		<script src="../../assets/js/hoverable-collapse.js"></script>
 		<script src="../../assets/js/misc.js"></script>
+		<script src="../../js/database/database.js"></script>
 		<!-- endinject -->
 		<!-- Custom js for this page -->
 		<!-- End custom js for this page -->

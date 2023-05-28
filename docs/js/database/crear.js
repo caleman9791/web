@@ -37,9 +37,13 @@ function listar(arguments) {
 		var tablaDB = document.getElementById("tbody");
 		elimina_nodos(tablaDB);
 		for (var i = 0; i < databases.length; i++) {
+			let btn_eliminar = document.createElement("INPUT");
+			// let btn_xxxx = document.createElement("INPUT");
+			// let btn_xxxx = document.createElement("INPUT");
 			let _tr = document.createElement("TR");
 			let _tdnombre = document.createElement("TD");
 			let _tdversion = document.createElement("TD");
+			let _tdeliminar = document.createElement("TD");
 			_tr.setAttribute("dbnoombre", databases[i].name);
 			_tr.setAttribute("dbversion", databases[i].version);
 			console.log('=====');
