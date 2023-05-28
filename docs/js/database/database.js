@@ -75,8 +75,10 @@ function crar(nombre, version) {
 
 	DBOpenRequest.onupgradeneeded = (event) => {
 		const db = event.target.result;
-		console.log(`Upgrading to version ${db.version}`);
 
+		console.log(`Upgrading to version ${db.version}`);
+		document.getElementById('modal_actualizado')
+			.style.display = 'block';
 		// Create an objectStore for this database
 		const objectStore = db.createObjectStore(nombre, {
 			keyPath: nombre + "Titulo",
