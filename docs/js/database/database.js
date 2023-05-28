@@ -13,6 +13,44 @@ function elimina_nodos(contenedor) {
 	}
 }
 
+// function eliminaAllDB() {
+
+// 	const promise = indexedDB.databases();
+// 	promise.then((databases) => {
+// 		// console.log('=====');
+// 		console.log(databases.name);
+// 		console.log(databases.version);
+// 		// console.log('=====');
+// 		eliminar(databases.name, databases.version);
+// 	});
+// }
+
+function displayData(nombre) {
+
+	// open a read/write db transaction, ready for adding the data
+	const transaction = db.transaction(nombre, "readwrite");
+
+	// report on the success of opening the transaction
+	transaction.oncomplete = (event) => {
+		console.log('oncomplete');
+	};
+
+	transaction.onerror = (event) => {
+		console.log('error');
+
+	};
+
+	// you would then go on to do something to this database
+	// via an object store
+	const objectStore = transaction.objectStore(nombre);
+	// console.log(objectStore);
+	// console.log(objectStore.indexNames);
+	for (var i = 0; i < objectStore.indexNames.length; i++) {
+		console.log(objectStore.indexNames[i]);
+	}
+
+}
+
 function crar(nombre, version) {
 	const DBOpenRequest = window.indexedDB.open(nombre, version);
 
@@ -26,6 +64,41 @@ function crar(nombre, version) {
 		listar();
 		// store the result of opening the database in the db variable. This is used a lot later on, for opening transactions and suchlike.
 		db = DBOpenRequest.result;
+		// const objectStore = DBOpenRequest.createObjectStore(nombre, {
+		// 	keyPath: nombre,
+		// });
+		// console.log(db.objectStoreNames);
+		// db.close();
+		displayData(nombre);
+
+	};
+
+	DBOpenRequest.onupgradeneeded = (event) => {
+		const db = event.target.result;
+		console.log(`Upgrading to version ${db.version}`);
+
+		// Create an objectStore for this database
+		const objectStore = db.createObjectStore(nombre, {
+			keyPath: nombre + "Titulo",
+		});
+
+		// define what data items the objectStore will contain
+		objectStore.createIndex("hours", "hours", {
+			unique: false
+		});
+		objectStore.createIndex("minutes", "minutes", {
+			unique: false
+		});
+		objectStore.createIndex("day", "day", {
+			unique: false
+		});
+		objectStore.createIndex("month", "month", {
+			unique: false
+		});
+		objectStore.createIndex("year", "year", {
+			unique: false
+		});
+
 	};
 
 }
@@ -39,7 +112,9 @@ function eliminar(nombre, version) {
 
 	DBDeleteRequest.onsuccess = (event) => {
 		console.log("Database deleted successfully");
-
+		listar();
+		document.getElementById('modal_eliminar')
+			.style.display = 'block'
 		console.log(event.result); // should be undefined
 	};
 }
@@ -63,10 +138,10 @@ function listar(arguments) {
 			btn_eliminar.setAttribute("value", "Elininar");
 			btn_eliminar.setAttribute("class", "w3-btn w3-block w3-red btn_elininar_db");
 			btn_eliminar.setAttribute("dbnoombre", databases[i].name);
-			btn_eliminar.setAttribute("dbnoombre", databases[i].version);
+			btn_eliminar.setAttribute("dbversion", databases[i].version);
 			_tr.setAttribute("dbnoombre", databases[i].name);
 			_tr.setAttribute("dbversion", databases[i].version);
-			console.log('=====');
+			// console.log('=====');
 			// console.log(databases[i].name);
 			// console.log(databases[i].version);
 			_tdnombre.textContent = databases[i].name;
@@ -76,7 +151,7 @@ function listar(arguments) {
 			_tr.appendChild(_tdnombre);
 			_tr.appendChild(_tdversion);
 			_tr.appendChild(_tdeliminar);
-			console.log('=====');
+			// console.log('=====');
 
 			tablaDB.appendChild(_tr);
 		}
@@ -84,8 +159,9 @@ function listar(arguments) {
 
 		for (let i = 0; i < btn_elininar_db.length; i++) {
 			btn_elininar_db[i].addEventListener("click", function (arguments) {
-				document.getElementById('modal_eliminar')
-					.style.display = 'block'
+				console.log(this);
+				eliminar(this.getAttribute("dbnoombre"), this.getAttribute("dbversion"));
+
 			});
 		}
 
@@ -130,7 +206,7 @@ window.addEventListener("load", function (arguments) {
 	// 		.style.display = 'none';
 
 	// });
-
+	// eliminaAllDB();
 	listar();
 
 });
