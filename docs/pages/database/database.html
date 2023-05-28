@@ -556,8 +556,9 @@
 												Nombre
 											</th>
 											<th>
-												version
+												Version
 											</th>
+											<th style="width:10%"></th>
 											<th style="width:10%"></th>
 										</tr>
 									</thead>
@@ -617,6 +618,30 @@
 									</div>
 								</div>
 							</div>
+							<div id="modal_post_actualizar" class="w3-modal">
+								<br/>
+								<br/>
+								<div class="w3-modal-content w3-animate-top">
+									<div class="w3-container w3-padding-64">
+										<span onclick="document.getElementById('modal_post_actualizar').style.display='none'"  class="w3-button w3-display-topright">
+											&times;
+										</span>
+										<div class="w3-center">
+											<p>
+												<i class="mdi mdi-update w3-text-green w3-jumbo"></i>
+											</p>
+											<p>
+												SE va a ctualizar la version de la Base de datos
+											</p>
+											<div class="w3-bottom w3-justify">
+												<!-- <div class="w3-bottom w3-hide-large w3-hide-medium"> -->
+												<input id="btn_modal_post_actualizar" class="w3-btn w3-green w3-block"  type="button" value="Aceptar"/>
+											</div>
+										</div>
+										<!-- / -->
+									</div>
+								</div>
+							</div>
 							<div id="modal_actualizado" class="w3-modal">
 								<br/>
 								<br/>
@@ -630,11 +655,38 @@
 												<i class="mdi mdi-update w3-text-green w3-jumbo"></i>
 											</p>
 											<p>
-												Base de datos fue actualizada
+												SE va a ctualizar la version de la Base de datos
 											</p>
 										</div>
 										<!-- / -->
 									</div>
+								</div>
+							</div>
+							<div id="modal_loading" class="w3-modal" style="width;100%; margin:0px; padding:0px; z-index: 1099;">
+								<div class="w3-animate-top" style="width;100%; margin:0px; padding:0px">
+									<!-- <div class="w3-container"> -->
+									<!-- 		<span onclick="document.getElementById('modal_loading').style.display='none'"  class="w3-button w3-display-topright">
+												&times;
+											</span> -->
+									<!-- <div class="w3-center"> -->
+									<div class="bodY">
+										<!-- / -->
+										<div class="center">
+											<div class="wave"></div>
+											<div class="wave"></div>
+											<div class="wave"></div>
+											<div class="wave"></div>
+											<div class="wave"></div>
+											<div class="wave"></div>
+											<div class="wave"></div>
+											<div class="wave"></div>
+											<div class="wave"></div>
+											<div class="wave"></div>
+										</div>
+									</div>
+									<!-- </div> -->
+									<!-- / -->
+									<!-- </div> -->
 								</div>
 							</div>
 						</div>

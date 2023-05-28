@@ -53,6 +53,8 @@ function displayData(nombre) {
 
 function crar(nombre, version) {
 	const DBOpenRequest = window.indexedDB.open(nombre, version);
+	// document.getElementById('modal_crear_db')
+	// 	.style.display = 'none';
 
 	// these two event handlers act on the database being opened successfully, or not
 	DBOpenRequest.onerror = (event) => {
@@ -71,14 +73,25 @@ function crar(nombre, version) {
 		// db.close();
 		displayData(nombre);
 
+		setTimeout(() => {
+			document.getElementById('modal_loading')
+				.style.display = 'none';
+
+		}, 2000);
+
+		// document.getElementById('modal_loading')
+		// 	.style.display = 'none';
+
+		// document.getElementById('modal_crear_db')
+		// 	.style.display = 'none';
+
 	};
 
 	DBOpenRequest.onupgradeneeded = (event) => {
 		const db = event.target.result;
 
 		console.log(`Upgrading to version ${db.version}`);
-		document.getElementById('modal_actualizado')
-			.style.display = 'block';
+
 		// Create an objectStore for this database
 		const objectStore = db.createObjectStore(nombre, {
 			keyPath: nombre + "Titulo",
@@ -100,7 +113,7 @@ function crar(nombre, version) {
 		objectStore.createIndex("year", "year", {
 			unique: false
 		});
-
+		listar();
 	};
 
 }
@@ -115,13 +128,22 @@ function eliminar(nombre, version) {
 	DBDeleteRequest.onsuccess = (event) => {
 		console.log("Database deleted successfully");
 		listar();
-		document.getElementById('modal_eliminar')
-			.style.display = 'block'
+
+		setTimeout(() => {
+
+			document.getElementById('modal_eliminar')
+				.style.display = 'block';
+
+		}, 2200);
+
 		console.log(event.result); // should be undefined
 	};
 }
 
 function listar(arguments) {
+	document.getElementById('modal_loading')
+		.style.display = 'block';
+
 	const promise = indexedDB.databases();
 	promise.then((databases) => {
 		// console.log(databases);
@@ -129,6 +151,7 @@ function listar(arguments) {
 		elimina_nodos(tablaDB);
 		for (var i = 0; i < databases.length; i++) {
 			let btn_eliminar = document.createElement("INPUT");
+			let btn_actualizar = document.createElement("INPUT");
 			// let btn_xxxx = document.createElement("INPUT");
 			// let btn_xxxx = document.createElement("INPUT");
 			let _tr = document.createElement("TR");
@@ -141,6 +164,13 @@ function listar(arguments) {
 			btn_eliminar.setAttribute("class", "w3-btn w3-block w3-red btn_elininar_db");
 			btn_eliminar.setAttribute("dbnoombre", databases[i].name);
 			btn_eliminar.setAttribute("dbversion", databases[i].version);
+			let _tdactualizar = document.createElement("TD");
+			// w3-btn w3-block w3-green
+			btn_actualizar.setAttribute("type", "button");
+			btn_actualizar.setAttribute("value", "Actualizar");
+			btn_actualizar.setAttribute("class", "w3-btn w3-block w3-green btn_actualizar_db");
+			btn_actualizar.setAttribute("dbnoombre", databases[i].name);
+			btn_actualizar.setAttribute("dbversion", databases[i].version);
 			_tr.setAttribute("dbnoombre", databases[i].name);
 			_tr.setAttribute("dbversion", databases[i].version);
 			// console.log('=====');
@@ -149,9 +179,11 @@ function listar(arguments) {
 			_tdnombre.textContent = databases[i].name;
 			_tdversion.textContent = databases[i].version;
 
+			_tdactualizar.appendChild(btn_actualizar);
 			_tdeliminar.appendChild(btn_eliminar);
 			_tr.appendChild(_tdnombre);
 			_tr.appendChild(_tdversion);
+			_tr.appendChild(_tdactualizar);
 			_tr.appendChild(_tdeliminar);
 			// console.log('=====');
 
@@ -166,37 +198,48 @@ function listar(arguments) {
 
 			});
 		}
+		setTimeout(() => {
+			document.getElementById('modal_loading')
+				.style.display = 'none';
 
+		}, 2000);
 	});
 
 }
 window.addEventListener("load", function (arguments) {
-	// let script = document.querySelectorAll("script");
-	// for (var i = 0; i < script.length; i++) {
-
-	// 	if (script[i].getAttribute("src") == "../../js/chat.js") {
-	// 		console.log(script[i]);
-	// 		eliminar_nodo(script[i]);
-	// 	}
-
-	// }
 
 	let btn_crear_db = document.getElementById("btn_crear_db");
 
 	btn_crear_db.addEventListener("click", function (e) {
 		console.log(this);
-
-		document.getElementById('modal_crear_db')
+		document.getElementById('modal_loading')
 			.style.display = 'block';
+		setTimeout(() => {
+			document.getElementById('modal_loading')
+				.style.display = 'none';
+
+		}, 2000);
+		setTimeout(() => {
+			document.getElementById('modal_crear_db')
+				.style.display = 'block';
+
+		}, 2100);
+
+		// document.getElementById('modal_crear_db')
+		// 	.style.display = 'block';
 	});
 
 	let btn_crear = document.getElementById("crear");
 	btn_crear.addEventListener("click", function (arguments) {
 		let txt_dbnombre = document.getElementById("txt_dbnombre");
 		let txt_dbversion = document.getElementById("txt_dbversion");
-		crar(txt_dbnombre.value, txt_dbversion.value);
+		document.getElementById('modal_loading')
+			.style.display = 'block';
 		document.getElementById('modal_crear_db')
 			.style.display = 'none';
+		crar(txt_dbnombre.value, txt_dbversion.value);
+		// document.getElementById('modal_crear_db')
+		// 	.style.display = 'none';
 
 	});
 
@@ -212,3 +255,11 @@ window.addEventListener("load", function (arguments) {
 	listar();
 
 });
+
+document.getElementById('modal_loading')
+	.style.display = 'block';
+setTimeout(() => {
+	document.getElementById('modal_loading')
+		.style.display = 'none';
+
+}, 2000);
