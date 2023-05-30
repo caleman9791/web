@@ -119,3 +119,17 @@ bodY {
 		transform: scale(0);
 	}
 }
+
+ul.navbar-nav.navbar-nav-right.code_hide {
+	display: none;
+}
+
+.btn.btn-warning.btn-fw.code_txt_btn_inicio {
+	color: black;
+	font-size: 15px;
+	font-weight: bold;
+}
+
+.nav-item.sidebar-user-actions.code_hide {
+	display: none;
+}
