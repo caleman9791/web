@@ -1,1 +1,3 @@
 https://caleman9791.github.io/web/index.html
+
+http://localhost/Proyectos/caleman9791/web/docs/index.html
