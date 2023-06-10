@@ -1,0 +1,53 @@
+// function actualizar(nombre, version) {
+// 	const DBOpenRequest = window.indexedDB.open(nombre, version);
+
+// 	// these two event handlers act on the database being opened successfully, or not
+// 	DBOpenRequest.onerror = (event) => {
+// 		console.error("Error loading database.");
+// 	};
+
+// 	DBOpenRequest.onsuccess = (event) => {
+// 		console.info("Database initialized.");
+// 		listar();
+// 		// store the result of opening the database in the db variable. This is used a lot later on, for opening transactions and suchlike.
+// 		db = DBOpenRequest.result;
+// 		// const objectStore = DBOpenRequest.createObjectStore(nombre, {
+// 		// 	keyPath: nombre,
+// 		// });
+// 		// console.log(db.objectStoreNames);
+// 		// db.close();
+// 		displayData(nombre);
+
+// 	};
+
+// 	DBOpenRequest.onupgradeneeded = (event) => {
+// 		const db = event.target.result;
+
+// 		console.log(`Upgrading to version ${db.version}`);
+// 		document.getElementById('modal_actualizado')
+// 			.style.display = 'block';
+// 		// Create an objectStore for this database
+// 		const objectStore = db.createObjectStore(nombre, {
+// 			keyPath: nombre + "Titulo",
+// 		});
+
+// 		// define what data items the objectStore will contain
+// 		objectStore.createIndex("hours", "hours", {
+// 			unique: false
+// 		});
+// 		objectStore.createIndex("minutes", "minutes", {
+// 			unique: false
+// 		});
+// 		objectStore.createIndex("day", "day", {
+// 			unique: false
+// 		});
+// 		objectStore.createIndex("month", "month", {
+// 			unique: false
+// 		});
+// 		objectStore.createIndex("year", "year", {
+// 			unique: false
+// 		});
+
+// 	};
+
+// }
