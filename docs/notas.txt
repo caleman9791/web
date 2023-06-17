@@ -1,3 +1,6 @@
 http://caleman9791.infinityfreeapp.com/?i=2
 
 https://caleman9791web.000webhostapp.com/
+
+
+http://localhost/app/web/docs/index.php

@@ -1,0 +1,850 @@
+		table {
+			border-collapse: collapse;
+			border-spacing: 0;
+			empty-cells: show
+		}
+
+		td,
+		th {
+			vertical-align: top;
+			font-size: 10pt;
+		}
+
+		h1,
+		h2,
+		h3,
+		h4,
+		h5,
+		h6 {
+			clear: both;
+		}
+
+		p {
+			white-space: nowrap;
+		}
+
+		ol,
+		ul {
+			margin: 0;
+			padding: 0;
+		}
+
+		li {
+			list-style: none;
+			margin: 0;
+			padding: 0;
+		}
+
+		span.footnodeNumber {
+			padding-right: 1em;
+		}
+
+		span.annotation_style_by_filter {
+			font-size: 95%;
+			font-family: Arial;
+			background-color: #fff000;
+			margin: 0;
+			border: 0;
+			padding: 0;
+		}
+
+		span.heading_numbering {
+			margin-right: 0.8rem;
+		}
+
+		* {
+			margin: 0;
+		}
+
+		.gr1 {
+			font-size: 18pt;
+			writing-mode: horizontal-tb;
+			direction: ltr;
+			padding-top: 0.125cm;
+			padding-bottom: 0.125cm;
+			padding-left: 0.25cm;
+			padding-right: 0.25cm;
+			text-align: left ! important;
+		}
+
+		.P1 {
+			text-align: left ! important;
+			font-size: 18pt;
+		}
+
+		.ta1 {
+			writing-mode: horizontal-tb;
+			direction: ltr;
+		}
+
+		.ta2 {
+			writing-mode: horizontal-tb;
+			direction: ltr;
+		}
+
+		.Default {
+			font-size: 11pt;
+			font-family: Calibri;
+			vertical-align: bottom;
+			color: #000000;
+		}
+
+		.ce1 {
+			color: #000000;
+			font-size: 11pt;
+			font-family: Calibri;
+			vertical-align: bottom;
+			background-color: #ffffff;
+			font-style: normal;
+			text-shadow: none;
+			text-decoration: none ! important;
+			font-weight: normal;
+		}
+
+		.ce10 {
+			color: #000000;
+			font-size: 11pt;
+			font-family: Arial;
+			vertical-align: middle;
+			border-top-width: 0.0261cm;
+			border-top-style: solid;
+			border-top-color: #000000;
+			border-left-width: 0.0261cm;
+			border-left-style: solid;
+			border-left-color: #000000;
+			border-bottom-width: 0.0261cm;
+			border-bottom-style: solid;
+			border-bottom-color: #000000;
+			border-right-width: 0.0261cm;
+			border-right-style: solid;
+			border-right-color: #000000;
+			background-color: #ffffff;
+			text-align: center ! important;
+			margin-left: 0cm;
+			writing-mode: horizontal-tb;
+			direction: ltr;
+			font-style: normal;
+			text-shadow: none;
+			text-decoration: none ! important;
+			font-weight: normal;
+		}
+
+		.ce11 {
+			color: #000000;
+			font-size: 11pt;
+			font-family: Calibri;
+			vertical-align: bottom;
+			font-style: normal;
+			text-shadow: none;
+			text-decoration: none ! important;
+			font-weight: normal;
+		}
+
+		.ce12 {
+			color: #000000;
+			font-size: 10pt;
+			font-family: Arial;
+			vertical-align: middle;
+			border-bottom-style: none;
+			background-color: #ffffff;
+			border-left-style: none;
+			border-right-style: none;
+			border-top-width: 0.0621cm;
+			border-top-style: solid;
+			border-top-color: #000000;
+			text-align: left ! important;
+			margin-left: 0cm;
+			writing-mode: horizontal-tb;
+			direction: ltr;
+			font-style: normal;
+			text-shadow: none;
+			text-decoration: none ! important;
+			font-weight: bold;
+		}
+
+		.ce13 {
+			color: #000000;
+			font-size: 10pt;
+			font-family: Arial;
+			vertical-align: middle;
+			border-bottom-width: 0.0261cm;
+			border-bottom-style: solid;
+			border-bottom-color: #000000;
+			background-color: #ffffff;
+			border-left-style: none;
+			border-right-style: none;
+			border-top-width: 0.0261cm;
+			border-top-style: solid;
+			border-top-color: #000000;
+			text-align: left ! important;
+			margin-left: 0cm;
+			writing-mode: horizontal-tb;
+			direction: ltr;
+			font-style: normal;
+			text-shadow: none;
+			text-decoration: none ! important;
+			font-weight: normal;
+		}
+
+		.ce14 {
+			color: #000000;
+			font-size: 11pt;
+			font-family: Calibri;
+			vertical-align: bottom;
+			border-top-width: 0.0261cm;
+			border-top-style: solid;
+			border-top-color: #000000;
+			border-left-width: 0.0261cm;
+			border-left-style: solid;
+			border-left-color: #000000;
+			border-bottom-width: 0.0261cm;
+			border-bottom-style: solid;
+			border-bottom-color: #000000;
+			border-right-width: 0.0261cm;
+			border-right-style: solid;
+			border-right-color: #000000;
+			font-style: normal;
+			text-shadow: none;
+			text-decoration: none ! important;
+			font-weight: normal;
+		}
+
+		.ce15 {
+			color: #000000;
+			font-size: 11pt;
+			font-family: Calibri;
+			vertical-align: bottom;
+			border-top-width: 0.0261cm;
+			border-top-style: solid;
+			border-top-color: #000000;
+			border-left-width: 0.0261cm;
+			border-left-style: solid;
+			border-left-color: #000000;
+			border-bottom-width: 0.0261cm;
+			border-bottom-style: solid;
+			border-bottom-color: #000000;
+			border-right-width: 0.0261cm;
+			border-right-style: solid;
+			border-right-color: #000000;
+			margin-left: 0cm;
+			writing-mode: horizontal-tb;
+			direction: ltr;
+			font-style: normal;
+			text-shadow: none;
+			text-decoration: none ! important;
+			font-weight: normal;
+		}
+
+		.ce16 {
+			color: #000000;
+			font-size: 11pt;
+			font-family: Arial;
+			vertical-align: bottom;
+			border-top-width: 0.0261cm;
+			border-top-style: solid;
+			border-top-color: #000000;
+			border-left-width: 0.0261cm;
+			border-left-style: solid;
+			border-left-color: #000000;
+			border-bottom-width: 0.0261cm;
+			border-bottom-style: solid;
+			border-bottom-color: #000000;
+			border-right-width: 0.0261cm;
+			border-right-style: solid;
+			border-right-color: #000000;
+			margin-left: 0cm;
+			writing-mode: horizontal-tb;
+			direction: ltr;
+			font-style: normal;
+			text-shadow: none;
+			text-decoration: none ! important;
+			font-weight: normal;
+		}
+
+		.ce17 {
+			color: #000000;
+			font-size: 11pt;
+			font-family: Calibri;
+			vertical-align: bottom;
+			background-color: #ffffff;
+			text-align: center ! important;
+			margin-left: 0cm;
+			writing-mode: horizontal-tb;
+			direction: ltr;
+			font-style: normal;
+			text-shadow: none;
+			text-decoration: none ! important;
+			font-weight: bold;
+		}
+
+		.ce18 {
+			color: #000000;
+			font-size: 10pt;
+			font-family: Arial;
+			vertical-align: middle;
+			border-bottom-style: none;
+			background-color: #31859c;
+			border-left-width: 0.0621cm;
+			border-left-style: solid;
+			border-left-color: #000000;
+			border-right-style: none;
+			border-top-width: 0.0621cm;
+			border-top-style: solid;
+			border-top-color: #000000;
+			text-align: center ! important;
+			margin-left: 0cm;
+			writing-mode: horizontal-tb;
+			direction: ltr;
+			font-style: normal;
+			text-shadow: none;
+			text-decoration: none ! important;
+			font-weight: bold;
+		}
+
+		.ce19 {
+			color: #000000;
+			font-size: 10pt;
+			font-family: Arial;
+			vertical-align: middle;
+			border-bottom-style: none;
+			background-color: #ffffff;
+			border-left-width: 0.0621cm;
+			border-left-style: solid;
+			border-left-color: #000000;
+			border-right-width: 0.0621cm;
+			border-right-style: solid;
+			border-right-color: #000000;
+			border-top-width: 0.0621cm;
+			border-top-style: solid;
+			border-top-color: #000000;
+			margin-left: 0cm;
+			writing-mode: horizontal-tb;
+			direction: ltr;
+			font-style: normal;
+			text-shadow: none;
+			text-decoration: none ! important;
+			font-weight: bold;
+		}
+
+		.ce2 {
+			color: #000000;
+			font-size: 10pt;
+			font-family: Arial;
+			vertical-align: bottom;
+			background-color: #ffffff;
+			text-align: left ! important;
+			margin-left: 0cm;
+			writing-mode: horizontal-tb;
+			direction: ltr;
+			font-style: normal;
+			text-shadow: none;
+			text-decoration: none ! important;
+			font-weight: normal;
+		}
+
+		.ce20 {
+			color: #000000;
+			font-size: 10pt;
+			font-family: Arial;
+			vertical-align: middle;
+			border-bottom-width: 0.0261cm;
+			border-bottom-style: solid;
+			border-bottom-color: #000000;
+			background-color: #ffffff;
+			border-left-style: none;
+			border-right-width: 0.0261cm;
+			border-right-style: solid;
+			border-right-color: #000000;
+			border-top-width: 0.0261cm;
+			border-top-style: solid;
+			border-top-color: #000000;
+			text-align: center ! important;
+			margin-left: 0cm;
+			writing-mode: horizontal-tb;
+			direction: ltr;
+			font-style: normal;
+			text-shadow: none;
+			text-decoration: none ! important;
+			font-weight: normal;
+		}
+
+		.ce21 {
+			color: #000000;
+			font-size: 10pt;
+			font-family: Arial;
+			vertical-align: middle;
+			border-top-style: none;
+			border-left-style: none;
+			border-bottom-style: none;
+			border-right-style: none;
+			background-color: #ffffff;
+			margin-left: 0cm;
+			writing-mode: horizontal-tb;
+			direction: ltr;
+			font-style: normal;
+			text-shadow: none;
+			text-decoration: none ! important;
+			font-weight: bold;
+		}
+
+		.ce22 {
+			color: #000000;
+			font-size: 11pt;
+			font-family: Arial;
+			vertical-align: top;
+			border-top-width: 0.0261cm;
+			border-top-style: solid;
+			border-top-color: #000000;
+			border-left-width: 0.0261cm;
+			border-left-style: solid;
+			border-left-color: #000000;
+			border-bottom-width: 0.0261cm;
+			border-bottom-style: solid;
+			border-bottom-color: #000000;
+			border-right-width: 0.0261cm;
+			border-right-style: solid;
+			border-right-color: #000000;
+			background-color: #ffffff;
+			margin-left: 0cm;
+			writing-mode: horizontal-tb;
+			direction: ltr;
+			font-style: normal;
+			text-shadow: none;
+			text-decoration: none ! important;
+			font-weight: normal;
+		}
+
+		.ce23 {
+			color: #ffffff;
+			font-size: 10pt;
+			font-family: Arial;
+			vertical-align: middle;
+			border-bottom-style: none;
+			background-color: #31859c;
+			border-left-width: 0.0621cm;
+			border-left-style: solid;
+			border-left-color: #000000;
+			border-right-width: 0.0621cm;
+			border-right-style: solid;
+			border-right-color: #000000;
+			border-top-width: 0.0621cm;
+			border-top-style: solid;
+			border-top-color: #000000;
+			text-align: center ! important;
+			margin-left: 0cm;
+			writing-mode: horizontal-tb;
+			direction: ltr;
+			font-style: normal;
+			text-shadow: none;
+			text-decoration: none ! important;
+			font-weight: bold;
+		}
+
+		.ce24 {
+			color: #000000;
+			font-size: 11pt;
+			font-family: Calibri;
+			vertical-align: bottom;
+			border-top-width: 0.0261cm;
+			border-top-style: solid;
+			border-top-color: #000000;
+			border-left-width: 0.0261cm;
+			border-left-style: solid;
+			border-left-color: #000000;
+			border-bottom-width: 0.0261cm;
+			border-bottom-style: solid;
+			border-bottom-color: #000000;
+			border-right-width: 0.0261cm;
+			border-right-style: solid;
+			border-right-color: #000000;
+		}
+
+		.ce25 {
+			color: #ffffff;
+			font-size: 10pt;
+			font-family: Arial;
+			vertical-align: middle;
+			border-top-width: 0.0621cm;
+			border-top-style: solid;
+			border-top-color: #000000;
+			border-left-width: 0.0621cm;
+			border-left-style: solid;
+			border-left-color: #000000;
+			border-bottom-width: 0.0621cm;
+			border-bottom-style: solid;
+			border-bottom-color: #000000;
+			border-right-width: 0.0621cm;
+			border-right-style: solid;
+			border-right-color: #000000;
+			background-color: #31859c;
+			text-align: center ! important;
+			margin-left: 0cm;
+			writing-mode: horizontal-tb;
+			direction: ltr;
+			font-style: normal;
+			text-shadow: none;
+			text-decoration: none ! important;
+			font-weight: bold;
+		}
+
+		.ce26 {
+			color: #000000;
+			font-size: 9pt;
+			font-family: Arial;
+			vertical-align: top;
+			border-bottom-width: 0.0261cm;
+			border-bottom-style: solid;
+			border-bottom-color: #000000;
+			background-color: #ffffff;
+			border-left-width: 0.0261cm;
+			border-left-style: solid;
+			border-left-color: #000000;
+			border-right-width: 0.0261cm;
+			border-right-style: solid;
+			border-right-color: #000000;
+			border-top-style: none;
+			margin-left: 0cm;
+			writing-mode: horizontal-tb;
+			direction: ltr;
+			font-style: normal;
+			text-shadow: none;
+			text-decoration: none ! important;
+			font-weight: normal;
+		}
+
+		.ce27 {
+			color: #000000;
+			font-size: 9pt;
+			font-family: Arial;
+			vertical-align: top;
+			border-top-width: 0.0261cm;
+			border-top-style: solid;
+			border-top-color: #000000;
+			border-left-width: 0.0261cm;
+			border-left-style: solid;
+			border-left-color: #000000;
+			border-bottom-width: 0.0261cm;
+			border-bottom-style: solid;
+			border-bottom-color: #000000;
+			border-right-width: 0.0261cm;
+			border-right-style: solid;
+			border-right-color: #000000;
+			background-color: #ffffff;
+			margin-left: 0cm;
+			writing-mode: horizontal-tb;
+			direction: ltr;
+			font-style: normal;
+			text-shadow: none;
+			text-decoration: none ! important;
+			font-weight: normal;
+		}
+
+		.ce28 {
+			color: #000000;
+			font-size: 11pt;
+			font-family: Calibri;
+			vertical-align: bottom;
+			font-style: normal;
+			text-shadow: none;
+			text-decoration: none ! important;
+			font-weight: bold;
+		}
+
+		.ce29 {
+			color: #000000;
+			font-size: 11pt;
+			font-family: Calibri;
+			vertical-align: bottom;
+			border-top-width: 0.0261cm;
+			border-top-style: solid;
+			border-top-color: #000000;
+			border-left-width: 0.0261cm;
+			border-left-style: solid;
+			border-left-color: #000000;
+			border-bottom-width: 0.0261cm;
+			border-bottom-style: solid;
+			border-bottom-color: #000000;
+			border-right-width: 0.0261cm;
+			border-right-style: solid;
+			border-right-color: #000000;
+			margin-left: 0cm;
+			writing-mode: horizontal-tb;
+			direction: ltr;
+		}
+
+		.ce3 {
+			color: #000000;
+			font-size: 22pt;
+			font-family: Calibri;
+			vertical-align: bottom;
+			border-top-width: 0.0261cm;
+			border-top-style: solid;
+			border-top-color: #000000;
+			border-left-width: 0.0261cm;
+			border-left-style: solid;
+			border-left-color: #000000;
+			border-bottom-width: 0.0261cm;
+			border-bottom-style: solid;
+			border-bottom-color: #000000;
+			border-right-width: 0.0261cm;
+			border-right-style: solid;
+			border-right-color: #000000;
+			background-color: #ffffff;
+			text-align: left ! important;
+			margin-left: 0cm;
+			writing-mode: horizontal-tb;
+			direction: ltr;
+			font-style: normal;
+			text-shadow: none;
+			text-decoration: none ! important;
+			font-weight: normal;
+		}
+
+		.ce4 {
+			color: #000000;
+			font-size: 14pt;
+			font-family: Calibri;
+			vertical-align: bottom;
+			border-top-width: 0.0261cm;
+			border-top-style: solid;
+			border-top-color: #000000;
+			border-left-width: 0.0261cm;
+			border-left-style: solid;
+			border-left-color: #000000;
+			border-bottom-width: 0.0261cm;
+			border-bottom-style: solid;
+			border-bottom-color: #000000;
+			border-right-width: 0.0261cm;
+			border-right-style: solid;
+			border-right-color: #000000;
+			background-color: #ffffff;
+			text-align: left ! important;
+			margin-left: 0cm;
+			writing-mode: horizontal-tb;
+			direction: ltr;
+			font-style: normal;
+			text-shadow: none;
+			text-decoration: none ! important;
+			font-weight: normal;
+		}
+
+		.ce5 {
+			color: #000000;
+			font-size: 10pt;
+			font-family: Arial;
+			vertical-align: middle;
+			border-bottom-style: none;
+			background-color: #ffffff;
+			border-left-width: 0.0621cm;
+			border-left-style: solid;
+			border-left-color: #000000;
+			border-right-style: none;
+			border-top-width: 0.0621cm;
+			border-top-style: solid;
+			border-top-color: #000000;
+			text-align: left ! important;
+			margin-left: 0cm;
+			writing-mode: horizontal-tb;
+			direction: ltr;
+			font-style: normal;
+			text-shadow: none;
+			text-decoration: none ! important;
+			font-weight: bold;
+		}
+
+		.ce6 {
+			color: #000000;
+			font-size: 10pt;
+			font-family: Arial;
+			vertical-align: middle;
+			border-bottom-width: 0.0261cm;
+			border-bottom-style: solid;
+			border-bottom-color: #000000;
+			background-color: #ffffff;
+			border-left-width: 0.0261cm;
+			border-left-style: solid;
+			border-left-color: #000000;
+			border-right-style: none;
+			border-top-width: 0.0261cm;
+			border-top-style: solid;
+			border-top-color: #000000;
+			text-align: left ! important;
+			margin-left: 0cm;
+			writing-mode: horizontal-tb;
+			direction: ltr;
+			font-style: normal;
+			text-shadow: none;
+			text-decoration: none ! important;
+			font-weight: normal;
+		}
+
+		.ce7 {
+			color: #000000;
+			font-size: 10pt;
+			font-family: Arial;
+			vertical-align: middle;
+			border-top-style: none;
+			border-left-style: none;
+			border-bottom-style: none;
+			border-right-style: none;
+			background-color: #ffffff;
+			text-align: center ! important;
+			margin-left: 0cm;
+			writing-mode: horizontal-tb;
+			direction: ltr;
+			font-style: normal;
+			text-shadow: none;
+			text-decoration: none ! important;
+			font-weight: bold;
+		}
+
+		.ce8 {
+			color: #000000;
+			font-size: 10pt;
+			font-family: Arial;
+			vertical-align: bottom;
+			background-color: #ffffff;
+			font-style: normal;
+			text-shadow: none;
+			text-decoration: none ! important;
+			font-weight: bold;
+		}
+
+		.ce9 {
+			color: #000000;
+			font-size: 10pt;
+			font-family: Arial;
+			vertical-align: middle;
+			border-bottom-style: none;
+			background-color: #31859c;
+			border-left-width: 0.0621cm;
+			border-left-style: solid;
+			border-left-color: #000000;
+			border-right-width: 0.0621cm;
+			border-right-style: solid;
+			border-right-color: #000000;
+			border-top-width: 0.0621cm;
+			border-top-style: solid;
+			border-top-color: #000000;
+			text-align: center ! important;
+			margin-left: 0cm;
+			writing-mode: horizontal-tb;
+			direction: ltr;
+			font-style: normal;
+			text-shadow: none;
+			text-decoration: none ! important;
+			font-weight: bold;
+		}
+
+		.co1 {
+			width: 2.48cm;
+		}
+
+		.co10 {
+			width: 2.24cm;
+		}
+
+		.co11 {
+			width: 3.023cm;
+		}
+
+		.co12 {
+			width: 18.122cm;
+		}
+
+		.co13 {
+			width: 7.049cm;
+		}
+
+		.co14 {
+			width: 1.699cm;
+		}
+
+		.co2 {
+			width: 2.762cm;
+		}
+
+		.co3 {
+			width: 4.329cm;
+		}
+
+		.co4 {
+			width: 3.611cm;
+		}
+
+		.co5 {
+			width: 2.676cm;
+		}
+
+		.co6 {
+			width: 3.328cm;
+		}
+
+		.co7 {
+			width: 3.154cm;
+		}
+
+		.co8 {
+			width: 3.046cm;
+		}
+
+		.co9 {
+			width: 4.046cm;
+		}
+
+		.ro1 {
+			height: 0.503cm;
+		}
+
+		.ro2 {
+			height: 1.005cm;
+		}
+
+		.ro3 {
+			height: 0.635cm;
+		}
+
+		.ro4 {
+			height: 0.529cm;
+		}
+
+		.ro5 {
+			height: 1.376cm;
+		}
+
+		.ro6 {
+			height: 0.926cm;
+		}
+
+		.ro7 {
+			height: 5.424cm;
+		}
+
+		.ro8 {
+			height: 5.08cm;
+		}
+
+		.ro9 {
+			height: 0.794cm;
+		}
+
+		.T1 {
+			font-family: Arial;
+			font-size: 10pt;
+			font-weight: normal;
+			text-decoration: none ! important;
+			font-style: italic;
+			text-shadow: none;
+		}
+
+		.T2 {
+			font-family: Arial;
+			font-size: 10pt;
+			font-weight: normal;
+			text-decoration: none ! important;
+			text-shadow: none;
+			font-style: normal;
+		}
+
+		/* ODF styles with no properties representable as CSS:
+		{ } */
