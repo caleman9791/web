@@ -1,23 +1,10 @@
-// var Tawk_API = Tawk_API || {},
-// 	Tawk_LoadStart = new Date();
-// (function () {
-// 	var s1 = document.createElement("script"),
-// 		s0 = document.getElementsByTagName("script")[0];
-// 	s1.async = true;
-// 	s1.src = 'https://embed.tawk.to/6179a366f7c0440a59204d1d/1fj1icikv';
-// 	s1.charset = 'UTF-8';
-// 	s1.setAttribute('crossorigin', '*');
-// 	s0.parentNode.insertBefore(s1, s0);
-// })();
-
-
 var Tawk_API = Tawk_API || {},
 	Tawk_LoadStart = new Date();
 (function () {
 	var s1 = document.createElement("script"),
 		s0 = document.getElementsByTagName("script")[0];
 	s1.async = true;
-	s1.src = 'https://embed.tawk.to/61636ebd157d100a41abbae1/1fhm6h596';
+	s1.src = 'https://embed.tawk.to/6179a366f7c0440a59204d1d/1fj1icikv';
 	s1.charset = 'UTF-8';
 	s1.setAttribute('crossorigin', '*');
 	s0.parentNode.insertBefore(s1, s0);
