@@ -7,37 +7,38 @@
 		</title>
 		<meta content='width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no' name='viewport'/>
 		<!-- Bootstrap 3.3.2 -->
-		<link href="bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
+		<link href="pages/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
 		<!-- FontAwesome 4.3.0 -->
-		<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet" type="text/css"/>
+		<link href="pages/https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet" type="text/css"/>
 		<!-- Ionicons 2.0.0 -->
-		<link href="http://code.ionicframework.com/ionicons/2.0.0/css/ionicons.min.css" rel="stylesheet" type="text/css"/>
+		<link href="pages/http://code.ionicframework.com/ionicons/2.0.0/css/ionicons.min.css" rel="stylesheet" type="text/css"/>
 		<!-- Theme style -->
-		<link href="dist/css/AdminLTE.min.css" rel="stylesheet" type="text/css"/>
+		<link href="pages/dist/css/AdminLTE.min.css" rel="stylesheet" type="text/css"/>
 		<!-- AdminLTE Skins. Choose a skin from the css/skins folder instead of downloading all of them to reduce the load. -->
-		<link href="dist/css/skins/_all-skins.min.css" rel="stylesheet" type="text/css"/>
+		<link href="pages/dist/css/skins/_all-skins.min.css" rel="stylesheet" type="text/css"/>
 		<!-- iCheck -->
-		<link href="plugins/iCheck/flat/blue.css" rel="stylesheet" type="text/css"/>
+		<link href="pages/plugins/iCheck/flat/blue.css" rel="stylesheet" type="text/css"/>
 		<!-- Morris chart -->
-		<link href="plugins/morris/morris.css" rel="stylesheet" type="text/css"/>
+		<link href="pages/plugins/morris/morris.css" rel="stylesheet" type="text/css"/>
 		<!-- jvectormap -->
-		<link href="plugins/jvectormap/jquery-jvectormap-1.2.2.css" rel="stylesheet" type="text/css"/>
+		<link href="pages/plugins/jvectormap/jquery-jvectormap-1.2.2.css" rel="stylesheet" type="text/css"/>
 		<!-- Date Picker -->
-		<link href="plugins/datepicker/datepicker3.css" rel="stylesheet" type="text/css"/>
+		<link href="pages/plugins/datepicker/datepicker3.css" rel="stylesheet" type="text/css"/>
 		<!-- Daterange picker -->
-		<link href="plugins/daterangepicker/daterangepicker-bs3.css" rel="stylesheet" type="text/css"/>
+		<link href="pages/plugins/daterangepicker/daterangepicker-bs3.css" rel="stylesheet" type="text/css"/>
 		<!-- bootstrap wysihtml5 - text editor -->
-		<link href="plugins/bootstrap-wysihtml5/bootstrap3-wysihtml5.min.css" rel="stylesheet" type="text/css"/>
+		<link href="pages/plugins/bootstrap-wysihtml5/bootstrap3-wysihtml5.min.css" rel="stylesheet" type="text/css"/>
 		<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
 		<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
 		<!--[if lt IE 9]> <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script> <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script><![endif]-->
+    <script type="text/javascript" src="./_caleman9791/js/chat.js"></script>
 	</head>
 	<!-- ADD THE CLASS fixed TO GET A FIXED HEADER AND SIDEBAR LAYOUT -->
 	<body class="skin-blue fixed">
 		<!-- Site wrapper -->
 		<div class="wrapper">
 			<header class="main-header">
-				<a href="./index2.html" class="logo">
+				<a href="pages/./index2.html" class="logo">
 					<b>
 						APP
 					</b>
@@ -275,13 +276,13 @@
 							</a>
 							<ul class="treeview-menu">
 								<li>
-									<a href="./index.html">
+									<a href="pages/./index.html">
 										<i class="fa fa-circle-o"></i>
 										Dashboard v1
 									</a>
 								</li>
 								<li>
-									<a href="./index2.html">
+									<a href="pages/./index2.html">
 										<i class="fa fa-circle-o"></i>
 										Dashboard v2
 									</a>
@@ -300,25 +301,25 @@
 							</a>
 							<ul class="treeview-menu">
 								<li>
-									<a href="layout/top-nav.html">
+									<a href="pages/layout/top-nav.html">
 										<i class="fa fa-circle-o"></i>
 										Top Navigation
 									</a>
 								</li>
 								<li>
-									<a href="layout/boxed.html">
+									<a href="pages/layout/boxed.html">
 										<i class="fa fa-circle-o"></i>
 										Boxed
 									</a>
 								</li>
 								<li class="active">
-									<a href="layout/fixed.html">
+									<a href="pages/layout/fixed.html">
 										<i class="fa fa-circle-o"></i>
 										Fixed
 									</a>
 								</li>
 								<li>
-									<a href="collapsed-sidebar.html">
+									<a href="pages/collapsed-sidebar.html">
 										<i class="fa fa-circle-o"></i>
 										Collapsed Sidebar
 									</a>
@@ -326,7 +327,7 @@
 							</ul>
 						</li>
 						<li>
-							<a href="widgets.html">
+							<a href="pages/widgets.html">
 								<i class="fa fa-th"></i>
 								<span>
 									Widgets
@@ -346,19 +347,19 @@
 							</a>
 							<ul class="treeview-menu">
 								<li>
-									<a href="charts/morris.html">
+									<a href="pages/charts/morris.html">
 										<i class="fa fa-circle-o"></i>
 										Morris
 									</a>
 								</li>
 								<li>
-									<a href="charts/flot.html">
+									<a href="pages/charts/flot.html">
 										<i class="fa fa-circle-o"></i>
 										Flot
 									</a>
 								</li>
 								<li>
-									<a href="charts/inline.html">
+									<a href="pages/charts/inline.html">
 										<i class="fa fa-circle-o"></i>
 										Inline charts
 									</a>
@@ -375,37 +376,37 @@
 							</a>
 							<ul class="treeview-menu">
 								<li>
-									<a href="./pages/UI/general.html">
+									<a href="pages/./pages/UI/general.html">
 										<i class="fa fa-circle-o"></i>
 										General
 									</a>
 								</li>
 								<li>
-									<a href="./pages/UI/icons.html">
+									<a href="pages/./pages/UI/icons.html">
 										<i class="fa fa-circle-o"></i>
 										Icons
 									</a>
 								</li>
 								<li>
-									<a href="./pages/UI/buttons.html">
+									<a href="pages/./pages/UI/buttons.html">
 										<i class="fa fa-circle-o"></i>
 										Buttons
 									</a>
 								</li>
 								<li>
-									<a href="./pages/UI/sliders.html">
+									<a href="pages/./pages/UI/sliders.html">
 										<i class="fa fa-circle-o"></i>
 										Sliders
 									</a>
 								</li>
 								<li>
-									<a href="./pages/UI/timeline.html">
+									<a href="pages/./pages/UI/timeline.html">
 										<i class="fa fa-circle-o"></i>
 										Timeline
 									</a>
 								</li>
 								<li>
-									<a href="./pages/UI/modals.html">
+									<a href="pages/./pages/UI/modals.html">
 										<i class="fa fa-circle-o"></i>
 										Modals
 									</a>
@@ -422,19 +423,19 @@
 							</a>
 							<ul class="treeview-menu">
 								<li>
-									<a href="forms/general.html">
+									<a href="pages/forms/general.html">
 										<i class="fa fa-circle-o"></i>
 										General Elements
 									</a>
 								</li>
 								<li>
-									<a href="forms/advanced.html">
+									<a href="pages/forms/advanced.html">
 										<i class="fa fa-circle-o"></i>
 										Advanced Elements
 									</a>
 								</li>
 								<li>
-									<a href="forms/editors.html">
+									<a href="pages/forms/editors.html">
 										<i class="fa fa-circle-o"></i>
 										Editors
 									</a>
@@ -451,13 +452,13 @@
 							</a>
 							<ul class="treeview-menu">
 								<li>
-									<a href="tables/simple.html">
+									<a href="pages/tables/simple.html">
 										<i class="fa fa-circle-o"></i>
 										Simple tables
 									</a>
 								</li>
 								<li>
-									<a href="tables/data.html">
+									<a href="pages/tables/data.html">
 										<i class="fa fa-circle-o"></i>
 										Data tables
 									</a>
@@ -465,7 +466,7 @@
 							</ul>
 						</li>
 						<li>
-							<a href="calendar.html">
+							<a href="pages/calendar.html">
 								<i class="fa fa-calendar"></i>
 								<span>
 									Calendar
@@ -476,7 +477,7 @@
 							</a>
 						</li>
 						<li>
-							<a href="mailbox/mailbox.html">
+							<a href="pages/mailbox/mailbox.html">
 								<i class="fa fa-envelope"></i>
 								<span>
 									Mailbox
@@ -496,43 +497,43 @@
 							</a>
 							<ul class="treeview-menu">
 								<li>
-									<a href="examples/invoice.html">
+									<a href="pages/examples/invoice.html">
 										<i class="fa fa-circle-o"></i>
 										Invoice
 									</a>
 								</li>
 								<li>
-									<a href="examples/login.html">
+									<a href="pages/examples/login.html">
 										<i class="fa fa-circle-o"></i>
 										Login
 									</a>
 								</li>
 								<li>
-									<a href="examples/register.html">
+									<a href="pages/examples/register.html">
 										<i class="fa fa-circle-o"></i>
 										Register
 									</a>
 								</li>
 								<li>
-									<a href="examples/lockscreen.html">
+									<a href="pages/examples/lockscreen.html">
 										<i class="fa fa-circle-o"></i>
 										Lockscreen
 									</a>
 								</li>
 								<li>
-									<a href="examples/404.html">
+									<a href="pages/examples/404.html">
 										<i class="fa fa-circle-o"></i>
 										404 Error
 									</a>
 								</li>
 								<li>
-									<a href="examples/500.html">
+									<a href="pages/examples/500.html">
 										<i class="fa fa-circle-o"></i>
 										500 Error
 									</a>
 								</li>
 								<li>
-									<a href="examples/blank.html">
+									<a href="pages/examples/blank.html">
 										<i class="fa fa-circle-o"></i>
 										Blank Page
 									</a>
@@ -599,7 +600,7 @@
 							</ul>
 						</li>
 						<li>
-							<a href="./documentation/index.html">
+							<a href="pages/./documentation/index.html">
 								<i class="fa fa-book"></i>
 								Documentation
 							</a>
@@ -1116,7 +1117,7 @@
 				</div>
 				<strong>
 					Copyright &copy; 2014-2015
-					<a href="http://almsaeedstudio.com">
+					<a href="pages/http://almsaeedstudio.com">
 						Almsaeed Studio
 					</a>
 					.
