@@ -1,6 +1,7 @@
 https://devdocs.io/dom/indexeddb_api
 https://devdocs.io/dom-indexeddb/
 
+
 IDBCursor
 IDBCursor.advance
 IDBCursor.continue
