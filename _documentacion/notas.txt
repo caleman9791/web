@@ -1,0 +1,49 @@
+http://localhost/app/caleman9791/web/docs/index.html
+http://localhost/app/caleman9791/web/docs/index.php
+
+    URL
+    URL API
+    URL Pattern API
+    URL.constructor
+    URL.createObjectURL
+    URL.hash
+    URL.host
+    URL.hostname
+    URL.href
+    URL.origin
+    URL.password
+    URL.pathname
+    URL.port
+    URL.protocol
+    URL.revokeObjectURL
+    URL.search
+    URL.searchParams
+    URL.toJSON
+    URL.toString
+    URL.username
+    URLPattern
+    URLPattern.constructor
+    URLPattern.exec
+    URLPattern.hash
+    URLPattern.hostname
+    URLPattern.password
+    URLPattern.pathname
+    URLPattern.port
+    URLPattern.protocol
+    URLPattern.search
+    URLPattern.test
+    URLPattern.username
+    URLSearchParams
+    URLSearchParams.append
+    URLSearchParams.constructor
+    URLSearchParams.delete
+    URLSearchParams.entries
+    URLSearchParams.forEach
+    URLSearchParams.get
+    URLSearchParams.getAll
+    URLSearchParams.has
+    URLSearchParams.keys
+    URLSearchParams.set
+    URLSearchParams.sort
+    URLSearchParams.toString
+    URLSearchParams.values

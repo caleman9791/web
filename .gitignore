@@ -1,5 +1,5 @@
 *.zip
 z1docs/
-_doc
+# _doc
 *.php
 # /_rest
