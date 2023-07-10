@@ -1,5 +1,10 @@
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css"/>
 <div class="w3-container">
+	<h3>
+		Mi proyecto de aplicación web
+	</h3>
+</div>
+<div class="w3-container">
 	<p>
 		¡Hola! Soy Carlos Alemán, un apasionado programador de aplicaciones web. En esta página web, compartiré contigo numerosas funcionalidades que he utilizado en mis proyectos de aplicación. Aunque la interfaz puede variar respecto a lo que he desarrollado para mis clientes, lo más importante es que todas las funcionalidades realmente funcionen y cumplan sus objetivos.
 	</p>
@@ -16,4 +21,15 @@
 		¡Explora las funcionalidades, experimenta con el código y no dudes en contactarme si tienes alguna pregunta o sugerencia! Juntos podemos llevar tus aplicaciones web al siguiente nivel.
 	</p>
 </div>
+<!-- <div class="">
+	Referencias
+	<ol>
+		<li>
+			<a href="https://adminlte.io" target="_blank">
+				adminlte
+			</a>
+		</li>
+	</ol>
+</div> -->
+<!-- / -->
 <!-- /.w3-container -->
