@@ -1,3 +1,6 @@
+https://adminlte.io/themes/AdminLTE/documentation/
+
+
 http://localhost/app/caleman9791/web/docs/index.html
 http://localhost/app/caleman9791/web/docs/index.php
 
